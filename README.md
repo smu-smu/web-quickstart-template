@@ -71,7 +71,7 @@
           return (<div></div>);
         }
 
-        export default ;
+        export default ${FILENAME};
 
 - redux-toolkit.code-snippets
 
