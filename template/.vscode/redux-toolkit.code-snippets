@@ -1,0 +1,63 @@
+{
+  "Create action with toolkit": {
+    "prefix": "cra",
+    "body": [
+      "createAction<$1>($2)"
+    ],
+    "description": "Create action with toolkit"
+  },
+  "Create empty payload action with toolkit": {
+    "prefix": "crape",
+    "body": [
+      "createAction($0)"
+    ],
+    "description": "Create empty payload action with toolkit"
+  },
+  "Create reducer with toolkit": {
+    "prefix": "crr",
+    "body": [
+      "createReducer<$2>($1, {",
+      "  [$3]: (state: $2, action) => {",
+      "    return {};",
+      "  }",
+      "})"
+    ],
+    "description": "Create reducer with toolkit"
+  },
+  "Redux state hooks": {
+    "prefix": "rsh",
+    "body": [
+      "import { useSelector } from \"react-redux\";",
+      "",
+      "export default function use$1() {",
+      "  const $4 = useSelector(($2) => $3);",
+      "  return $4;",
+      "}"
+    ],
+    "description": "Redux state hooks"
+  },
+  "Redux action hooks": {
+    "prefix": "rah",
+    "body": [
+      "import { useDispatch } from \"react-redux\";",
+      "",
+      "export default function use$1Actions() {",
+      "  const dispatch = useDispatch();",
+      "  $2",
+      "  return {};",
+      "}"
+    ],
+    "description": "Redux action hooks"
+  },
+  "Add redux action to dispatch": {
+    "prefix": "ratd",
+    "body": [
+      "const $1 = useCallback(",
+      "  () => {",
+      "    dispatch($2());",
+      "  }, [dispatch]",
+      ");"
+    ],
+    "description": "Add redux action to dispatch"
+  }
+}

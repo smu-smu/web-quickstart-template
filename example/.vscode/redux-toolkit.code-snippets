@@ -1,0 +1,48 @@
+{
+  "Create action with toolkit": {
+    "prefix": "cra",
+    "body": ["createAction<$1>($2)"],
+    "description": "Create action with toolkit"
+  },
+  "Create empty payload action with toolkit": {
+    "prefix": "crape",
+    "body": ["createAction($0)"],
+    "description": "Create empty payload action with toolkit"
+  },
+  "Create reducer with toolkit": {
+    "prefix": "crr",
+    "body": [
+      "createReducer<$2>($1, {",
+      "  [$3]: (state: $2, action) => {",
+      "    return {};",
+      "  }",
+      "})"
+    ],
+    "description": "Create reducer with toolkit"
+  },
+  "Redux Hooks": {
+    "prefix": "rehook",
+    "body": [
+      "import { useSelector, useDispatch } from \"react-redux\";",
+      "",
+      "export default function use$1() {",
+      "  const $2 = useSelector(($3) => $4);",
+      "  const dispatch = useDispatch();",
+      "  $5",
+      "  return { $2 };",
+      "}"
+    ],
+    "description": "Redux Hooks"
+  },
+  "Add redux action to dispatch": {
+    "prefix": "read",
+    "body": [
+      "const $1 = useCallback(",
+      "  () => {",
+      "    dispatch($2());",
+      "  }, [dispatch]",
+      ");"
+    ],
+    "description": "Add redux action to dispatch"
+  }
+}
