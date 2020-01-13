@@ -4,8 +4,6 @@
 
 ## 시작하기
 
----
-
 1.  Create React App (혹은 Create Next App)을 통해 프로젝트를 생선한다.
 
         npx create-react-app (프로젝트명) --template=typescript
@@ -61,8 +59,6 @@
 
 ## 스니펫
 
----
-
 - react.code-snippets
 
   **rfcp:** React Function Component with Props
@@ -115,7 +111,5 @@
         );
 
 ## 추가 자료
-
----
 
 [Integrating with Linters · Prettier](https://prettier.io/docs/en/integrating-with-linters.html#recommended-configuration)
